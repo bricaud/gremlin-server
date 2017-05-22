@@ -19,7 +19,7 @@ docker run -p 8182:8182 -v ~/:/graph_file -it --name gremlin gremlin-container
 The server can be accessed on port 8182 and the graphson file will be saved in the home directory `~/`.
 
 A demo showing how to access the database with python is provided. 
-Python 3 is required as well as the gremlin-python module. This module can be installed using
+Python 3 is required as well as the gremlin-python module. This module can be installed using:
 ```
 pip install gremlinpython
 ```

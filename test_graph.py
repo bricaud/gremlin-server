@@ -30,7 +30,7 @@ node2.next()
 # Adding a vertexProperty (property of node property):
 g.V().has('name','Node1').properties('name').property('Created','Today').next()
 
-# Create a edge
+# Create a edge between Node1 and Node2
 print('writing edge...')
 edge = (g.V().has('name','Node1')
 	.addE('edge_label').to(g.V().has('name','Node2')).next())
