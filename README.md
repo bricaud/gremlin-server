@@ -17,6 +17,8 @@ You can then start the container using:
 docker run -p 8182:8182 -v ~/:/graph_file -it --name gremlin gremlin-container
 ```
 The server can be accessed on port 8182 and the graphson file will be saved in the home directory `~/`.
+Alternatively, you can pull the image from DockerHub [here](https://hub.docker.com/r/bricaud/gremlin-server/).
+
 
 A demo showing how to access the database with python is provided. 
 Python 3 is required as well as the gremlin-python module. This module can be installed using:
