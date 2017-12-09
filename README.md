@@ -21,9 +21,12 @@ Alternatively, you can pull the image from DockerHub [here](https://hub.docker.c
 
 
 A demo showing how to access the database with python is provided. 
-Python 3 is required as well as the gremlin-python module. This module can be installed using:
+Python 3 is required as well as the gremlin-python module (use the version 
+that matches the gremlin-server version.) This 
+module 
+can be installed using:
 ```
-pip install gremlinpython
+pip install gremlinpython==3.2.6
 ```
 To run the demo, simply write in the console:
 ```
