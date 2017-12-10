@@ -39,7 +39,7 @@ edge = (g.V().has('name','Node1')
 print('Number of nodes {}, number of edges {}.'.format(g.V().count().next(),g.E().count().next()))
 
 # Showing the graph nodes:
-nodes_data = g.V().valueMap(True).toList()
+nodes_data = g.V().valueMap().toList()
 print('Nodes and the data associated:')
 print(nodes_data)
 
@@ -48,7 +48,7 @@ name_property = g.V().has('name','Node1').properties('name').valueMap().next()
 print(name_property)
 
 # Showing data on the edge:
-edges_data = g.E().valueMap(True).toList()
+edges_data = g.E().valueMap().toList()
 print('Edge and the data associated:')
 print(edges_data)
 
