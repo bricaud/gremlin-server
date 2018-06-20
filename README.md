@@ -1,6 +1,6 @@
 # A Docker container for Gremlin 3.x
 
-*There are different releases in this repository for version 3.2.4, 3.2.5, 3.2.6, 3.3.0 and 3.3.2 of Gremlin. Check the [releases](https://github.com/bricaud/gremlin-server/releases). The latest is for v3.3.2.*
+*There are different releases in this repository for version 3.2.4, 3.2.5, 3.2.6, 3.3.0, 3.3.2, and 3.3.3 of Gremlin. Check the [releases](https://github.com/bricaud/gremlin-server/releases). The latest is for v3.3.3.*
 
 This Docker file creates a container running [Gremlin Tinkerpop](https://github.com/apache/tinkerpop), with a TinkerGraph and configured for use with Python ([gremlin-python](http://tinkerpop.apache.org/docs/current/reference/#gremlin-python)).
 To build it, run the following command:
@@ -30,7 +30,7 @@ can be installed using:
 ```
 pip install gremlinpython==3.a.b
 ```
-where `a` and `b` are the sub-version number. It can be 3.2.4, 3.2.5, 3.2.6, 3.3.0, or 3.3.2
+where `a` and `b` are the sub-version number. It can be 3.2.4, 3.2.5, 3.2.6, 3.3.0, 3.3.2, or 3.3.3
 
 To run the demo (and make a minimal test), simply write in the console:
 ```
