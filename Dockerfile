@@ -7,7 +7,7 @@ RUN apk update && \
 	apk add wget unzip git bash dumb-init
 
 # Install the server
-RUN wget --no-check-certificate -O /gremlin.zip http://apache.mirrors.ovh.net/ftp.apache.org/dist/tinkerpop/3.3.3/apache-tinkerpop-gremlin-server-3.3.3-bin.zip && \
+RUN wget --no-check-certificate -O /gremlin.zip http://apache.claz.org/tinkerpop/3.3.3/apache-tinkerpop-gremlin-server-3.3.3-bin.zip && \
 	unzip /gremlin.zip -d /gremlin && \
 	rm /gremlin.zip
 WORKDIR /gremlin/apache-tinkerpop-gremlin-server-3.3.3
