@@ -31,7 +31,8 @@ threadPoolWorker: 1
 gremlinPool: 8
 scriptEvaluationTimeout: 30000
 graphs: {
-  graph: gremlin-graph.properties}
+  graph1: gremlin-graph-main.properties,
+  graph2: gremlin-graph-test.properties}
 scriptEngines: {
   gremlin-groovy: {
     plugins: { org.apache.tinkerpop.gremlin.server.jsr223.GremlinServerGremlinPlugin: {},

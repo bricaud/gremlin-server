@@ -36,3 +36,5 @@ To run the demo (and make a minimal test), simply write in the console:
 ```
 python test_graph.py
 ```
+
+A second in-memory graph instance named `g1` is also provided which can be used by unit tests in your application.
