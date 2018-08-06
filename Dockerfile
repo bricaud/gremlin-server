@@ -4,10 +4,11 @@ MAINTAINER Benjamin Ricaud <benjamin.ricaud@eviacybernetics.com>
 
 # Install tools
 RUN apk update && \
-	apk add wget unzip git bash dumb-init
+	apk add wget unzip git bash curl ca-certificates dumb-init && \
+	update-ca-certificates
 
 # Install the server
-RUN wget --no-check-certificate -O /gremlin.zip http://apache.claz.org/tinkerpop/3.3.3/apache-tinkerpop-gremlin-server-3.3.3-bin.zip && \
+RUN wget -O /gremlin.zip http://mirror.cc.columbia.edu/pub/software/apache/tinkerpop/3.3.3/apache-tinkerpop-gremlin-server-3.3.3-bin.zip && \
 	unzip /gremlin.zip -d /gremlin && \
 	rm /gremlin.zip
 WORKDIR /gremlin/apache-tinkerpop-gremlin-server-3.3.3
